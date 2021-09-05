@@ -32,6 +32,6 @@
 *.app
 
 # Ignore .terraform file
-*.terraform
+*.terraform.
 provider.tf
 terraform.*
