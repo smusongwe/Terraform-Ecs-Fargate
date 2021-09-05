@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Ignore .terraform file
+*.terraform
+provider.tf
+terraform.*
