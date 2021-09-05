@@ -41,7 +41,7 @@ resource "aws_ecs_service" "main" {
 
   load_balancer {
     target_group_arn = aws_alb_target_group.app.id
-    container_name   = "735972722491.dkr.ecr.us-west-2.amazonaws.com/haplet-registory:latest"
+    container_name   = "tomcat:8"
     container_port   = var.app_port
   }
 
