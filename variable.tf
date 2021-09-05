@@ -26,7 +26,7 @@ variable "app_port" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "735972722491.dkr.ecr.us-west-2.amazonaws.com/haplet-registory:latest"
+  default     = "nginx:latest"
 }
 
 variable "fargate_cpu" {
