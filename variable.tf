@@ -1,32 +1,32 @@
 variable aws_region {
-  type        = string
-  default     = "us-west-2"
-  }
+  type    = string
+  default = "us-west-2"
+}
 
- variable max_subnets {
-   type        = number
-   default     = 100
-    }
+variable max_subnets {
+  type    = number
+  default = 100
+}
 
-  variable az_count {
-    type        = number
-    default     = 2
-  }
+variable az_count {
+  type    = number
+  default = 2
+}
 
-   variable vpc-cidr {
-     type        = string
-     default     = "172.17.0.0/16"
-   }
+variable vpc-cidr {
+  type    = string
+  default = "172.17.0.0/16"
+}
 
 
 variable "app_port" {
   description = "Port exposed by the docker image to redirect traffic to"
   default     = 80
-} 
+}
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
+  default     = "tomcat:latest"
 }
 
 variable "fargate_cpu" {
@@ -51,5 +51,5 @@ variable "app_count" {
 
 variable "ecs_task_execution_role_name" {
   description = "ECS task execution role name"
-  default = "myEcsTaskExecutionRole"
+  default     = "myEcsTaskExecutionRole"
 }
